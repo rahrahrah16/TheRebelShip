@@ -1,0 +1,19 @@
+/* A small shared stylesheet keeps both assignment pages consistent. */
+:root { color-scheme: dark; font-family: Arial, sans-serif; background: #07101b; color: #dce9f2; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+nav { display: flex; gap: 24px; padding: 18px max(24px, calc((100% - 900px) / 2)); border-bottom: 1px solid #263d51; }
+a { color: #55d9e9; text-decoration: none; }
+a:hover { color: #a0f2f7; }
+main { max-width: 900px; margin: 70px auto; padding: 0 24px; }
+.eyebrow { color: #83a1b7; text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; }
+h1 { font-size: clamp(2.4rem, 7vw, 4rem); margin: 0 0 12px; }
+h2 { margin-top: 36px; }
+p, li { color: #a9bdcb; }
+table { width: 100%; border-collapse: collapse; margin: 32px 0; background: #0d1b2b; }
+th, td { padding: 14px 18px; text-align: left; border-bottom: 1px solid #263d51; }
+th { color: #83a1b7; font-size: .82rem; text-transform: uppercase; }
+.first { color: #f0c665; font-weight: bold; }
+.first td { color: #f0c665; }
+.button { display: inline-block; border: 1px solid #39c8da; border-radius: 5px; padding: 10px 16px; margin-top: 12px; }
+@media (max-width: 600px) { main { margin-top: 38px; } th, td { padding: 10px; } }
